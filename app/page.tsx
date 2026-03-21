@@ -81,12 +81,11 @@ const config = {
   ], 
   letter: [ 
     "Dear Kylie,", 
-    "Happy birthday to someone truly special. There is a certain kind of beauty that goes beyond appearance — the kind that lives in a person's presence, warmth, and the way they make the world feel lighter. That is what you carry.", 
-    ""Happy birthday to someone who truly deserves the best. To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. But when I thought about how to celebrate you today, an ordinary message simply didn't feel like enough. You inspire me to put in that extra effort.", 
+    "Happy birthday to someone who truly deserves the best. To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. But when I thought about how to celebrate you today, an ordinary message simply didn't feel like enough. You inspire me to put in that extra effort.", 
     "I know we are both in a season of life where we are incredibly busy, working hard, and focusing deeply on our career paths. It is amazing to see you chasing your goals, even though it means we don't always get to talk or spend time together as much as I would like.", 
     "Despite how chaotic our schedules can get, you are always on my mind. I am constantly hoping that the timing will align for us, and that we will get the chance to finally meet up and catch up soon, whenever it is possible for both of us.", 
-    "Until that day comes, I hope you feel incredibly celebrated today. I hope this year brings you so much success, protects your peace, and gives you moments that feel like answered prayers. Happy birthday, Kylie."
-  ], 
+    "Until that day comes, I hope you feel incredibly celebrated today. I hope this year brings you so much success, protects your peace, and gives you moments that feel like answered prayers. Happy birthday, Kylie." 
+  ],
 };
 
 const steps = ["intro", "spotlight", "gallery", "letter", "finale"] as const;
