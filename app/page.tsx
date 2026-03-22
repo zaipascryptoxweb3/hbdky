@@ -90,7 +90,7 @@ const config = {
       "Until that day comes, I hope you feel incredibly celebrated today. Keep shining and doing amazing things. I hope this new year of your life brings you so much success, happiness, and everything you are working toward. Happy birthday, Kylie." 
     ],
     PH: [
-      "Mahal na Kylie,",
+      "Kagalang galang na Kylie,",
       "Maligayang kaarawan! Sa totoo lang, ito ang kauna-unahang pagkakataon na gumawa at nag-deploy ako ng isang website para lang magpadala ng bati sa kaarawan. Nang iniisip ko kung paano ipagdiriwang ang espesyal araw mo, parang hindi sapat ang isang ordinaryong mensahe. Gusto kong gumawa ng kakaiba, isang maliit na digital space na ginawa para lang sa 'yo.",
       "Alam kong pareho tayo nasa yugto ng buhay kung saan napakabilis ng mga pangyayari. Pareho tayong nakatutok sa ating mga career, nagtatrabaho nang mabuti, at sinusubukang buuin ang ating mga kinabukasan. Sobrang proud ako na makita kang inaabot ang mga pangarap mo, kahit na minsan nagiging magulo ang mga schedule natin.",
       "Kahit gaano pa tayo ka-busy, lagi ka sa isip ko. Palagi kong inaasahan na sana magtugma na ang oras natin at magkaroon tayo ng pagkakataong magkita nang personal sa lalong madaling panahon, kapag naging posible na para sa ating dalawa. Gustong-gusto ko 'yun.",
