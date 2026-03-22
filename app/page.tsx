@@ -768,9 +768,9 @@ export default function BirthdayGreetingLuxury() {
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
                 className="mt-16 flex flex-col gap-6 border-t border-slate-200/60 pt-8 sm:flex-row sm:items-center sm:justify-between px-2"
               >
-                <p className="max-w-md text-sm leading-relaxed text-slate-400 font-medium">
-                  Made by Zaipas ❤️ {config.recipientName}.
-                </p>
+                <p className="max-w-md text-sm leading-relaxed text-slate-400 font-medium text-center w-full">
+                  Made by Zaipas ❤️
+                  </p>
 
                 <div className="flex items-center gap-4">
                   <Button variant="outline" className="rounded-full px-8 py-4" onClick={prev} disabled={isFirst}>
