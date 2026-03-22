@@ -769,7 +769,7 @@ export default function BirthdayGreetingLuxury() {
                 className="mt-16 flex flex-col gap-6 border-t border-slate-200/60 pt-8 sm:flex-row sm:items-center sm:justify-between px-2"
               >
                 <p className="max-w-md text-sm leading-relaxed text-slate-400 font-medium">
-                  Created with careful intention. Every detail, animation, and word is dedicated to celebrating {config.recipientName}.
+                  Made by Zaipas ❤️ {config.recipientName}.
                 </p>
 
                 <div className="flex items-center gap-4">
