@@ -27,13 +27,15 @@ interface ConfettiPiece {
   color: string;
 }
 
+type Language = "EN" | "PH" | "KR" | "JP";
+
 // --- Configuration ---
 const config = { 
   recipientName: "Kylie", 
   senderName: "Zaipas", 
   headline: "Happy Birthday", 
   eyebrow: "crafted with love, just for you", 
-  introLine: "Tonight is not just a birthday greeting. It is a small world made only to celebrate you.", 
+  introLine: "This is not just a birthday greeting. It is a small world made only to celebrate you.", 
   subheadline: "A premium little birthday experience filled with warmth, wonder, and a touch of magic.", 
   dateLabel: "Your Day, Your Light", 
   accentWord: "unforgettable", 
@@ -65,27 +67,50 @@ const config = {
     },
     { 
       title: "Happy", 
-      caption: "", 
+      caption: "Virtual dates and core memories.", 
       image: "/image/idate1.jpg", 
     },
     { 
       title: "Birthday", 
-      caption: "", 
+      caption: "Another favorite moment.", 
       image: "/image/ky2.jpg", 
     },  
     { 
       title: "Kylie", 
-      caption: "", 
+      caption: "Always shining.", 
       image: "/image/ky3.jpg", 
     },    
   ], 
-  letter: [ 
-    "Dear Kylie,", 
-    "Happy birthday! To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. When I was thinking about how to celebrate your special day, an ordinary message just didn't feel like enough. I wanted to create something unique, a little digital space made just for you.", 
-    "I know we are both in a season of life where things are incredibly fast-paced. We are both so focused on our career paths, working hard, and trying to build our futures. I'm so proud to see you chasing your goals, even when the hustle means our schedules get a bit chaotic.", 
-    "Despite how busy everything gets, you are always on my mind. I am constantly hoping that our timing will finally align and that we’ll get the chance to meet up in person soon, whenever it becomes possible for the both of us. I would absolutely love that.", 
-    "Until that day comes, I hope you feel incredibly celebrated today. Keep shining and doing amazing things. I hope this new year of your life brings you so much success, happiness, and everything you are working toward. Happy birthday, Kylie." 
-  ],
+  letter: {
+    EN: [ 
+      "Dear Kylie,", 
+      "Happy birthday! To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. When I was thinking about how to celebrate your special day, an ordinary message just didn't feel like enough. I wanted to create something unique, a little digital space made just for you.", 
+      "I know we are both in a season of life where things are incredibly fast-paced. We are both so focused on our career paths, working hard, and trying to build our futures. I'm so proud to see you chasing your goals, even when the hustle means our schedules get a bit chaotic.", 
+      "Despite how busy everything gets, you are always on my mind. I am constantly hoping that our timing will finally align and that we'll get the chance to meet up in person soon, whenever it becomes possible for the both of us. I would absolutely love that.", 
+      "Until that day comes, I hope you feel incredibly celebrated today. Keep shining and doing amazing things. I hope this new year of your life brings you so much success, happiness, and everything you are working toward. Happy birthday, Kylie." 
+    ],
+    PH: [
+      "Kagalang-galang na Kylie,",
+      "Maligayang kaarawan! Sa totoo lang, ito ang kauna-unahang pagkakataon na gumawa at nag-deploy ako ng isang website para lang magpadala ng bati sa kaarawan. Nang iniisip ko kung paano ipagdiriwang ang espesyal araw mo, parang hindi sapat ang isang ordinaryong mensahe. Gusto kong gumawa ng kakaiba, isang maliit na digital space na ginawa para lang sa 'yo.",
+      "Alam kong pareho tayo nasa yugto ng buhay kung saan napakabilis ng mga pangyayari. Pareho tayong nakatutok sa ating mga career, nagtatrabaho nang mabuti, at sinusubukang buuin ang ating mga kinabukasan. Sobrang proud ako na makita kang inaabot ang mga pangarap mo, kahit na minsan nagiging magulo ang mga schedule natin.",
+      "Kahit gaano pa tayo ka-busy, lagi ka sa isip ko. Palagi kong inaasahan na sana magtugma na ang oras natin at magkaroon tayo ng pagkakataong magkita nang personal sa lalong madaling panahon, kapag naging posible na para sa ating dalawa. Gustong-gusto ko 'yun.",
+      "Hanggang sa dumating ang araw na 'yun, sana maramdaman mo kung gaano ka ka-espesyal ngayon. Patuloy ka lang magniningning at gumawa ng mga kamangha-manghang bagay. Sana ang bagong taon na ito sa buhay mo ay magdala sa 'yo ng maraming tagumpay, kaligayahan, at lahat ng pinaghihirapan mo. Maligayang kaarawan, Kylie."
+    ],
+    KR: [
+        "Saranghaneun Kaily-ege,",
+        "Saeng-il chukahae! soljikhi malhaeseo, saeng-il chukha insareul jeonharyeogo websaiteureul jikjeop mandeulgo baepohae bon geon ibeon-i cheoeum-iya. neoui teukbyeolhan nareul eotteoke chukhahaejulkka gominhaetdeon ttae, pyeongbeomhan mesijiro-neun bujokhadaneun saenggagi deureosseo. ojik neomaneul wihan teukbyeolhan jageun dijiteol gongganeul mandeureojugo sipeosseo.",
+        "Uri dul da jigeum jeongmal bappeuge doraganeun sigireul bonaego itdaneun geol ara. gakjaui keorieoe jipjunghago, yeolsimhi ilhamyeo, miraereul mandeureogago itjana. bappeun iljeong ttaemune uriui seukejuli jogeum eogeutnadeorado, nega mokpyoreul hyanghae naaganeun moseubeul bomyeon jeongmal jarangseureowo.",
+        "Amuri bappado ilsang sogeseo hangsang ne saenggageul hae. uriui taimingi machimnae majatteoreojyeoseo, uri dul da ganeunghaejil ttae joman-gan kkok jikjeop mannal su itgireul barago isseo. jeongmal geuraesseumyeon jokesseo.",
+        "Geunal-i ol ttaekkaji, oneul haru nega sesangeseo gajang chukhabadneun sarami doegil bara. gyesok bitnago meotjin ildeureul haenaegil. neoui saeroun han haega keun seonggonggwa haengbok, geurigo nega noryeokhaneun modeun geotdeureul gajyeodajugil baralge. saeng-il chukahae, Kaily."
+        ],
+    JP: [
+        "Shina naru Kairī e,",
+        "Otanjōbi omedetō! shōjiki ni iu to, otanjōbi no oiwai no tame ni webusaito o tsukutte kōkai shita no wa kore ga hajimete nanda. kimi no tokubetsu na hi o dō yatte oiwai shiyō ka kangaeta toki, futsū no messēji ja tarinai ki ga shite. kimi no tame dake no, chiisana dejitaru kūkan o tsukuritakatta nda.",
+        "Bokutachi wa ima, totemo isogashii jiki o sugoshite iru yo ne. sorezore no kyaria ni shūchū shite, isshōkenmei hataraki nagara, shōrai o kizukō to shite iru. isogashikute sukejūru ga awanakunaru koto ga attemo, mokuhyō ni mukatte ganbaru kimi no sugata o totemo hokori ni omotte iru yo.",
+        "Donna ni isogashikutemo, kimi no koto wa itsumo kokoro ni iru yo. otagai no taimingu ga atte, chikauchi ni chokusetsu aeru kikai ga dekiru koto o itsumo negatte iru nda. hontō ni sō nareba ii na tte omotteru.",
+        "Sono hi ga kuru made, kyō to iu hi ga kimi ni totte saikō no ichinichi ni narimasu yō ni. kore kara mo kagayaki tsuzukete, subarashii koto o nashitogete ne. kimi no atarashii ichinen ga, takusan no seikō to shiawase, soshite kimi ga mezashite iru subete no mono o motarashite kuremasu yō ni. otanjōbi omedetō, Kairī."
+  ]
+  }
 };
 
 const steps = ["intro", "spotlight", "gallery", "letter", "finale"] as const;
@@ -136,6 +161,9 @@ export default function BirthdayGreetingLuxury() {
   const [celebrateKey, setCelebrateKey] = useState(0); 
   const [typedText, setTypedText] = useState("");
   const [confettiPieces, setConfettiPieces] = useState<ConfettiPiece[]>([]);
+  
+  // LETTER LANGUAGE STATE
+  const [letterLang, setLetterLang] = useState<Language>("EN");
 
   const currentStep = steps[step]; 
   const isFirst = step === 0; 
@@ -329,7 +357,7 @@ export default function BirthdayGreetingLuxury() {
                     <span className="ml-2 inline-block h-10 w-1 animate-pulse rounded-full bg-sky-400 align-middle md:h-16" />
                   </div>
                   <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-500 italic">
-                    {"\""}{config.signatureNote}{"\""}
+                    &quot;{config.signatureNote}&quot;
                   </p>
                   <div className="mt-12 flex justify-center">
                     <Button className="rounded-full px-10 py-5 text-lg" onClick={next}>
@@ -398,7 +426,7 @@ export default function BirthdayGreetingLuxury() {
                     from {config.senderName}
                   </p>
                   <p className="mt-8 text-3xl font-bold leading-tight text-white/95 italic">
-                    {"\""}I wanted this greeting to feel like a moment, not just a message.{"\""}
+                    &quot;I wanted this greeting to feel like a moment, not just a message.&quot;
                   </p>
                 </CardContent>
               </Card>
@@ -486,30 +514,59 @@ export default function BirthdayGreetingLuxury() {
 
             <Card className="mx-auto mt-16 max-w-4xl rounded-[3rem] border border-white bg-white/90 shadow-2xl shadow-slate-200/50 backdrop-blur-2xl">
               <CardContent className="p-6 md:p-12">
-                <div className="rounded-[2.5rem] bg-linear-to-br from-slate-50 via-white to-pink-50/30 p-8 md:p-14 relative overflow-hidden">
+                
+                {/* --- LANGUAGE TOGGLE UI --- */}
+                <div className="flex flex-wrap justify-center gap-2 mb-8 relative z-10">
+                  {(["EN", "PH", "KR", "JP"] as const).map((l) => (
+                    <button
+                      key={l}
+                      onClick={() => setLetterLang(l)}
+                      className={`rounded-full px-5 py-2 text-xs font-bold tracking-widest transition-all duration-300 ${
+                        letterLang === l 
+                          ? "bg-slate-800 text-white shadow-md scale-105" 
+                          : "bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                      }`}
+                    >
+                      {l === "EN" ? "ENGLISH" : l === "PH" ? "FILIPINO" : l === "KR" ? "한국어" : "日本語"}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="rounded-[2.5rem] bg-linear-to-br from-slate-50 via-white to-pink-50/30 p-8 md:p-14 relative overflow-hidden transition-all duration-500">
                   <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
                     <Stars className="w-40 h-40" />
                   </div>
-                  <div className="space-y-8 text-lg leading-loose text-slate-700 relative z-10">
-                    {config.letter.map((paragraph, index) => (
-                      <motion.p
-                        key={index}
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.15, duration: 0.8 }}
-                        className={index === 0 ? "text-2xl font-bold text-slate-800" : ""}
-                      >
-                        {paragraph}
-                      </motion.p>
-                    ))}
+                  
+                  {/* --- ANIMATED LETTER CONTENT --- */}
+                  <AnimatePresence mode="wait">
                     <motion.div 
-                      initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
-                      className="pt-10 text-right"
+                      key={letterLang}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.4 }}
+                      className="space-y-8 text-lg leading-loose text-slate-700 relative z-10"
                     >
-                      <p className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-2">Yours truly,</p>
-                      <p className="text-3xl font-black text-slate-800">— {config.senderName}</p>
+                      {config.letter[letterLang].map((paragraph, index) => (
+                        <motion.p
+                          key={index}
+                          initial={{ opacity: 0, y: 15 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.1, duration: 0.6 }}
+                          className={index === 0 ? "text-2xl font-bold text-slate-800" : ""}
+                        >
+                          {paragraph}
+                        </motion.p>
+                      ))}
+                      <motion.div 
+                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
+                        className="pt-10 text-right"
+                      >
+                        <p className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-2">Yours truly,</p>
+                        <p className="text-3xl font-black text-slate-800">— {config.senderName}</p>
+                      </motion.div>
                     </motion.div>
-                  </div>
+                  </AnimatePresence>
                 </div>
               </CardContent>
             </Card>
@@ -626,7 +683,7 @@ export default function BirthdayGreetingLuxury() {
             transition={{ duration: 0.4 }}
             className="w-full max-w-md"
           >
-            <Card className="rounded-[3rem] border border-white bg-white/80 p-8 shadow-2xl shadow-slate-200/50 backdrop-blur-2xl md:p-10">
+            <Card className="rounded-4xl border border-white bg-white/80 p-8 shadow-2xl shadow-slate-200/50 backdrop-blur-2xl md:p-10">
               <div className="flex flex-col items-center text-center">
                 <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-pink-100 to-sky-100 shadow-inner">
                   {authError ? <Lock className="h-8 w-8 text-rose-500" /> : <Unlock className="h-8 w-8 text-pink-500" />}
@@ -692,6 +749,7 @@ export default function BirthdayGreetingLuxury() {
                       animate={{ opacity: 1, y: 0 }} 
                       className="text-sm font-bold text-rose-500"
                     >
+                      That doesn&apos;t seem quite right. Try again!
                     </motion.p>
                   )}
                 </div>
@@ -766,12 +824,8 @@ export default function BirthdayGreetingLuxury() {
             {step > 0 && (
               <motion.div 
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
-                className="mt-16 flex flex-col gap-6 border-t border-slate-200/60 pt-8 sm:flex-row sm:items-center sm:justify-between px-2"
+                className="mt-16 flex flex-col items-center gap-6 border-t border-slate-200/60 pt-8 px-2"
               >
-                <p className="max-w-md text-sm leading-relaxed text-slate-400 font-medium text-center w-full">
-                  Made by Zaipas ❤️
-                  </p>
-
                 <div className="flex items-center gap-4">
                   <Button variant="outline" className="rounded-full px-8 py-4" onClick={prev} disabled={isFirst}>
                     <ChevronLeft className="mr-2 h-4 w-4" />
@@ -782,9 +836,14 @@ export default function BirthdayGreetingLuxury() {
                     {!isLast && <ChevronRight className="ml-2 h-4 w-4" />}
                   </Button>
                 </div>
+                
+                <p className="text-sm font-medium text-slate-400 mt-4 text-center w-full">
+                  Made by Zaipas ❤️
+                </p>
               </motion.div>
             )}
           </AnimatePresence>
+
         </main>
       )}
 
