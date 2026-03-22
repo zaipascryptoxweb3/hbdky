@@ -90,7 +90,7 @@ const config = {
       "Until that day comes, I hope you feel incredibly celebrated today. Keep shining and doing amazing things. I hope this new year of your life brings you so much success, happiness, and everything you are working toward. Happy birthday, Kylie." 
     ],
     PH: [
-      "Kagalang-galang na Kylie,",
+      "Mahal na Kylie,",
       "Maligayang kaarawan! Sa totoo lang, ito ang kauna-unahang pagkakataon na gumawa at nag-deploy ako ng isang website para lang magpadala ng bati sa kaarawan. Nang iniisip ko kung paano ipagdiriwang ang espesyal araw mo, parang hindi sapat ang isang ordinaryong mensahe. Gusto kong gumawa ng kakaiba, isang maliit na digital space na ginawa para lang sa 'yo.",
       "Alam kong pareho tayo nasa yugto ng buhay kung saan napakabilis ng mga pangyayari. Pareho tayong nakatutok sa ating mga career, nagtatrabaho nang mabuti, at sinusubukang buuin ang ating mga kinabukasan. Sobrang proud ako na makita kang inaabot ang mga pangarap mo, kahit na minsan nagiging magulo ang mga schedule natin.",
       "Kahit gaano pa tayo ka-busy, lagi ka sa isip ko. Palagi kong inaasahan na sana magtugma na ang oras natin at magkaroon tayo ng pagkakataong magkita nang personal sa lalong madaling panahon, kapag naging posible na para sa ating dalawa. Gustong-gusto ko 'yun.",
@@ -109,7 +109,7 @@ const config = {
         "Bokutachi wa ima, totemo isogashii jiki o sugoshite iru yo ne. sorezore no kyaria ni shūchū shite, isshōkenmei hataraki nagara, shōrai o kizukō to shite iru. isogashikute sukejūru ga awanakunaru koto ga attemo, mokuhyō ni mukatte ganbaru kimi no sugata o totemo hokori ni omotte iru yo.",
         "Donna ni isogashikutemo, kimi no koto wa itsumo kokoro ni iru yo. otagai no taimingu ga atte, chikauchi ni chokusetsu aeru kikai ga dekiru koto o itsumo negatte iru nda. hontō ni sō nareba ii na tte omotteru.",
         "Sono hi ga kuru made, kyō to iu hi ga kimi ni totte saikō no ichinichi ni narimasu yō ni. kore kara mo kagayaki tsuzukete, subarashii koto o nashitogete ne. kimi no atarashii ichinen ga, takusan no seikō to shiawase, soshite kimi ga mezashite iru subete no mono o motarashite kuremasu yō ni. otanjōbi omedetō, Kairī."
-  ]
+        ]
   }
 };
 
@@ -191,6 +191,14 @@ export default function BirthdayGreetingLuxury() {
     }
   };
 
+  // --- Effects ---
+
+  // 1. Scroll to top automatically when step changes or intro is opened
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [step, openIntro]);
+
+  // 2. Confetti generator
   useEffect(() => {
     const pieces = Array.from({ length: 60 }, (_, i) => ({ 
       id: i, 
@@ -204,6 +212,7 @@ export default function BirthdayGreetingLuxury() {
     setConfettiPieces(pieces);
   }, [celebrateKey]);
 
+  // 3. Typewriter effect for the intro
   useEffect(() => { 
     if (currentStep !== "intro" || !openIntro) return;
     const target = `${config.headline}, ${config.recipientName}.`;
