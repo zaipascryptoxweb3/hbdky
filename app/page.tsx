@@ -81,10 +81,10 @@ const config = {
   ], 
   letter: [ 
     "Dear Kylie,", 
-    "Happy birthday to someone who truly deserves the best. To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. But when I thought about how to celebrate you today, an ordinary message simply didn't feel like enough. You inspire me to put in that extra effort.", 
-    "I know we are both in a season of life where we are incredibly busy, working hard, and focusing deeply on our career paths. It is amazing to see you chasing your goals, even though it means we don't always get to talk or spend time together as much as I would like.", 
-    "Despite how chaotic our schedules can get, you are always on my mind. I am constantly hoping that the timing will align for us, and that we will get the chance to finally meet up and catch up soon, whenever it is possible for both of us.", 
-    "Until that day comes, I hope you feel incredibly celebrated today. I hope this year brings you so much success, protects your peace, and gives you moments that feel like answered prayers. Happy birthday, Kylie." 
+    "Happy birthday! To be completely honest with you, this is my very first time building and deploying a website just to send a birthday greeting. When I was thinking about how to celebrate your special day, an ordinary message just didn't feel like enough. I wanted to create something unique, a little digital space made just for you.", 
+    "I know we are both in a season of life where things are incredibly fast-paced. We are both so focused on our career paths, working hard, and trying to build our futures. I'm so proud to see you chasing your goals, even when the hustle means our schedules get a bit chaotic.", 
+    "Despite how busy everything gets, you are always on my mind. I am constantly hoping that our timing will finally align and that we’ll get the chance to meet up in person soon, whenever it becomes possible for the both of us. I would absolutely love that.", 
+    "Until that day comes, I hope you feel incredibly celebrated today. Keep shining and doing amazing things. I hope this new year of your life brings you so much success, happiness, and everything you are working toward. Happy birthday, Kylie." 
   ],
 };
 
